@@ -1,0 +1,6 @@
+[submodule "todotxt"]
+	path = todotxt
+	url = git://github.com/tristil/todo.txt-python.git
+[submodule "tracks"]
+	path = tracks
+	url = git://github.com/tristil/tracks-python.git
