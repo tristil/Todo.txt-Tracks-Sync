@@ -45,5 +45,7 @@ if __name__ == '__main__':
   todotxt_parser = TodotxtParser(verbose = True)
   todotxt_parser.load()
   todotxt_parser.importFromTracks(tracks_client)
+  todotxt_parser.writeData()
+  todotxt_parser.load()
   todotxt_parser.exportToTracks(tracks_client)
   todotxt_parser.writeData()
