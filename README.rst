@@ -1,8 +1,3 @@
-Warning
--------
-See the note below about how this plugin is NOT ready for prime time and you
-probably shouldn't try to use it yet.
-
 What Is It?
 -----------
 
@@ -47,18 +42,20 @@ Then you should be able to run the tsync command as an extension of todo.txt:::
 
 Notes
 -----
-I would say at the moment that this plugin is VERY EXPERIMENTAL. It is
-particularly unstable at the moment after some heavy refactoring of the
-underlying libraries. If you use this with your "production" todo.txt or Tracks
-installation, you should BACKUP both of them. 
+I would say at the moment that this plugin is a bit rough. If you use this with
+your "production" todo.txt or Tracks installation, you should BACKUP both of
+them. 
 
 Major caveats for using this plugin are:
 
 * It may not see much more active development.
 * When it's working correctly it will append a tid: keyword to every todo,
-  associating the local store with an todos id from the remote store
-* Not particularly stable (see above). Not really doing the right things when
-  for example a todo is removed from the remote or local stores.
+  associating the local store with an todos id from the remote store.
+* It guesses that when a remote todo does not appear in the feed of active
+  todos that it is completed. It therefore will do the wrong thing when a todo
+  is deleted or deferred. This is done because typically the feed of done items
+  is too long to compare against until a search api is built.
+
 
 Feedback
 --------
